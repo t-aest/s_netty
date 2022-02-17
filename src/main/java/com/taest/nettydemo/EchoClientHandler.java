@@ -6,6 +6,12 @@ import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
+
+/**
+ * channelActive()——在到服务器的连接已经建立之后将被调用;
+ * channelRead0()——当从服务器接收到一条消息时被调用;
+ * exceptionCaught()——在处理过程中引发异常时被调用。
+ */
 @ChannelHandler.Sharable
 public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
